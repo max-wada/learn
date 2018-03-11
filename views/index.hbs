@@ -1,0 +1,26 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>{{ greeting }}</h1>
+    <!-- <img src="/public/baby.jpg"> -->
+    <table>
+        <tr>
+            <th>username</th>
+            <th>first</th>
+            <th>last</th>
+        </tr>
+        {{#each users}}
+            <tr>
+                <td>{{ this.username }}</td>
+                <td>{{ this.name.first }}</td>
+                <td>{{ this.name.last }}</td>
+            </tr>
+        {{/each}}
+    </table>
+
+</body>
+
+</html>
